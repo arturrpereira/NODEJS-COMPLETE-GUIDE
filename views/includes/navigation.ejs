@@ -1,24 +1,56 @@
+<div class="backdrop"></div>
 <header class="main-header">
-   <nav class="main-header__nav">
-      <ul class="main-header__item-list">
-         <li class="main-header__item">
-            <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
-         </li>
-         <li class="main-header__item">
-            <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
-         </li>
-         <li class="main-header__item">
-            <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
-         </li>
-         <li class="main-header__item">
-            <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
-         </li>
-         <li class="main-header__item">
-            <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product</a>
-         </li>
-         <li class="main-header__item">
-            <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products</a>
-         </li>
-      </ul>
-   </nav>
+    <button id="side-menu-toggle">Menu</button>
+    <nav class="main-header__nav">
+        <ul class="main-header__item-list">
+            <li class="main-header__item">
+                <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
+                </a>
+            </li>
+            <li class="main-header__item">
+                <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
+                </a>
+            </li>
+        </ul>
+    </nav>
 </header>
+
+<nav class="mobile-nav">
+        <ul class="mobile-nav__item-list">
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/' ? 'active' : '' %>" href="/">Shop</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/products' ? 'active' : '' %>" href="/products">Products</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/cart' ? 'active' : '' %>" href="/cart">Cart</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/orders' ? 'active' : '' %>" href="/orders">Orders</a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/admin/add-product' ? 'active' : '' %>" href="/admin/add-product">Add Product
+                    </a>
+                </li>
+                <li class="mobile-nav__item">
+                    <a class="<%= path === '/admin/products' ? 'active' : '' %>" href="/admin/products">Admin Products
+                    </a>
+                </li>
+            </ul>
+</nav>
+
+<h1>SE BUGAR A PÁGINA APERTE F5 PARA ATUALIZAR!</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uuNqaNCUFu8?autoplay=1" title="Título do vídeo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
