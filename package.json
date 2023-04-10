@@ -16,8 +16,8 @@
     "express-handlebars": "^6.0.6",
     "faker": "^6.6.6",
     "nodemon": "^2.0.20",
+    "pg": "^8.9.0",
     "pug": "^3.0.2"
   },
   "description": ""
 }
-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
