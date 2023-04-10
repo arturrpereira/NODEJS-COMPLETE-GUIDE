@@ -6,7 +6,6 @@ const config = JSON.parse(fs.readFileSync('config.json'));
 
 const mongoKey = config.mongoKey;
 
-
 let _db;
 
 const mongoConnect = (callback) => {
