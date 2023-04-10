@@ -1,0 +1,12 @@
+{
+  "name": "exercise2",
+  "version": "1.0.0",
+  "description": "Course exercise2",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Artur Fernando",
+  "license": "ISC"
+}

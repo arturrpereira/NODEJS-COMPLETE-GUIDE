@@ -1,0 +1,11 @@
+# Ignore node_modules directory
+node_modules/
+
+# Ignore Mac OS X system files
+.DS_Store
+
+# Ignore emacs backup files
+*~
+
+# Ignore Visual Studio Code generated files
+.vscode/
