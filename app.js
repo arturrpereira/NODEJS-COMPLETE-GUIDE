@@ -32,17 +32,25 @@ const authRoutes = require('./routes/auth');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'publics')));
-app.use(session({ secret: 'my secret', resave: false, saveUnintialized: false, store: store }));
+app.use(
+  session({
+    secret: 'my secret',
+    resave: false,
+    saveUnintialized: false,
+    store: store
+  })
+);
 
 app.use((req, res, next) => {
-  User.findById('6419e8c5ca3ef31a58d63855')
-    .then(user => {
-      req.user = user;
-      next();
-    })
-    .catch(err => {
-      console.log(err);
-    });
+  if (!req.session.user) {
+    return next();
+  }
+  User.findById(req.session.user._id).then(user => {
+    req.user = user;
+    next();
+  }).catch(err => {
+    console.log(err);
+  });
 });
 
 app.use('/admin', adminRoutes);
